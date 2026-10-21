@@ -4,422 +4,472 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Matilda Cederström – Digital Marketing & PR Specialist</title>
+    <!-- Google Consent Mode v2 defaults must be set before GTM. -->
+    <script data-cookieconsent="ignore">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag("consent", "default", {
+            ad_personalization: "denied",
+            ad_storage: "denied",
+            ad_user_data: "denied",
+            analytics_storage: "denied",
+            functionality_storage: "denied",
+            personalization_storage: "denied",
+            security_storage: "granted",
+            wait_for_update: 500
+        });
+        gtag("set", "ads_data_redaction", true);
+        gtag("set", "url_passthrough", false);
+    </script>
+    <!-- Google Tag Manager -->
+    <script data-cookieconsent="ignore">
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+            var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l !== "dataLayer" ? "&l=" + l : "";
+            j.async = true;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "GTM-MQGZ8L7B");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Cookiebot CMP with automatic cookie blocking -->
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="4d985f78-03d3-4be5-a0e7-08055642a6bd" data-blockingmode="auto" type="text/javascript"></script>
     <meta name="description"
-        content="Matilda Cederström studerar till Digital Marketing Specialist och hjälper företag med PR, event marknadsföring och digital kommunikation i Göteborg.">
-    
-    <!-- Google Fonts för lyxig redaktionell estetik -->
+        content="Matilda Cederström studerar Digital Marketing Specialist på IHM Business School. Läs om hennes erfarenhet inom PR, kommunikation och service.">
+    <title>Matilda Cederström — Digital marknadsföring</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
 
 <body>
-    <!-- Sidbehållare med redaktionell tidningsram -->
-    <div class="site-wrapper">
-
-        <!-- 1. HERO MED STORT TYPOGRAFISKT MOTIV -->
-        <header class="hero-section" id="start">
-            <div class="hero-header-brand">
-                <span class="hero-giant-title">MATILDA.C</span>
-            </div>
-
-            <!-- Interaktivt cirkulärt märke -->
-            <div class="brand-badge" aria-hidden="true">
-                <svg viewBox="0 0 100 100" class="badge-svg">
-                    <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="transparent" />
-                    <text class="badge-text">
-                        <textPath href="#circlePath" startOffset="0%">
-                            MATILDA CEDERSTRÖM • PR & DIGITAL • GÖTEBORG •
-                        </textPath>
-                    </text>
-                </svg>
-                <div class="badge-center">
-                    <span>MC</span>
-                </div>
-            </div>
-
-            <div class="hero-media-wrapper">
-                <img src="img/hero.jpg" alt="Matilda Cederström - Editorial Portrait" class="hero-bg-img" width="1600" height="900" priority>
-                
-                <!-- Citat och CTA nere till vänster i hero -->
-                <div class="hero-overlay-content">
-                    <p class="hero-quote-text">
-                        <span class="quote-line">UPPTÄCK VÄGEN</span>
-                        <span class="quote-line">TILL <em>resultat</em></span>
-                        <span class="quote-line">DU VILL UPPNÅ</span>
-                    </p>
-                    <a href="#kontakt" class="hero-pill-btn">Boka in</a>
-                </div>
-            </div>
-        </header>
-
-        <!-- 2. ESPRESSO-BRUN NAVIGATIONSBAR -->
-        <nav class="espresso-nav" aria-label="Huvudmeny">
-            <div class="nav-container">
-                <a href="#start" class="nav-brand">MATILDA CEDERSTRÖM</a>
-                
-                <ul class="nav-menu">
-                    <li><a href="#om">Om mig</a></li>
-                    <li><a href="#tjanster">Tjänster</a></li>
-                    <li><a href="#arbete">Samarbeta</a></li>
-                    <li><a href="#projekt">Projekt</a></li>
-                    <li><a href="#kontakt">Kontakt</a></li>
-                </ul>
-
-                <div class="nav-actions">
-                    <button id="tema" type="button" class="nav-btn-theme" aria-label="Växla tema">
-                        <span class="theme-icon">◐</span>
-                        <span class="theme-text">Byt till mörkt läge</span>
-                    </button>
-                    <a href="#kontakt" class="nav-pill-cta">Boka</a>
-                </div>
-            </div>
-        </nav>
-
-        <main id="huvudinnehall">
-            <!-- 3. REDAKTIONELL INTRO MED MOODBOARD COLLAGE -->
-            <section class="editorial-philosophy" id="om">
-                <div class="section-container">
-                    <div class="editorial-heading-group">
-                        <span class="editorial-eyebrow">EN PLATS DÄR</span>
-                        <h1 class="editorial-title">DIGITAL STRATEGI</h1>
-                        <span class="editorial-subtitle"><em>möter</em> KREATIVT MOD</span>
-                    </div>
-
-                    <!-- Estetiskt moodboard med 3 överlappande bilder -->
-                    <div class="moodboard-grid">
-                        <div class="moodboard-item moodboard-left">
-                            <img src="img/moodboard-accessories.jpg" alt="Accessoarer, designerglasögon och doftflaska på läderyta" loading="lazy">
-                        </div>
-                        <div class="moodboard-item moodboard-center">
-                            <img src="img/moodboard-portrait.jpg" alt="Matilda i kavaj med anteckningsbok och stilren komposition" loading="lazy">
-                        </div>
-                        <div class="moodboard-item moodboard-right">
-                            <img src="img/moodboard-coffee.jpg" alt="Espressokopp på silverfat på marmorbord" loading="lazy">
-                        </div>
-                    </div>
-
-                    <!-- Om mig introduktionstext -->
-                    <div class="editorial-intro-text">
-                        <p class="lead-paragraph">
-                            Jag studerar till <strong>Digital Marketing Specialist</strong> på <em>IHM Business School</em> i Göteborg med förväntad examen 2028.
-                        </p>
-                        <p>
-                            Med erfarenhet inom PR-konsultarbete från <strong>More PR</strong>, eventmarknadsföring från <strong>Yrgo</strong> och webbutveckling vid <strong>Luleå tekniska universitet</strong> hjälper jag varumärken att bygga meningsfulla relationer som engagerar på riktigt.
-                        </p>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQGZ8L7B" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="site-header" id="header">
+        <div class="nav-container">
+            <a class="brand-logo" href="#hero" aria-label="Matilda Cederström – till startsidan">Matilda Cederström</a>
+            <nav class="nav-menu" aria-label="Huvudmeny">
+                <a class="nav-link" href="#om-mig">Om mig</a>
+                <a class="nav-link" href="#kompetenser">Kompetenser</a>
+                <a class="nav-link" href="#bakgrund">Bakgrund</a>
+                <a class="nav-link" href="#kontakt">Kontakta mig</a>
+                <div class="header-controls">
+                    <button class="nav-link theme-toggle" type="button" aria-label="Växla till mörkt läge" aria-pressed="false">Mörkt läge</button>
+                    <div class="language-switch" aria-label="Välj språk">
+                        <button type="button" class="language-option is-active" data-language="sv" aria-pressed="true">SV</button>
+                        <span aria-hidden="true">/</span>
+                        <button type="button" class="language-option" data-language="en" aria-pressed="false">EN</button>
                     </div>
                 </div>
-            </section>
-
-            <!-- 4. TRE-KOLUMNERS NUMRERAD HIGHLIGHTBAR -->
-            <section class="numbered-highlights" id="tjanster" aria-label="Översikt av tjänster och fokusområden">
-                <div class="section-container highlights-grid">
-                    <div class="highlight-column">
-                        <span class="highlight-number">01.</span>
-                        <div class="highlight-details">
-                            <h2 class="highlight-title">VAD JAG GÖR</h2>
-                            <p class="highlight-desc">
-                                Strategisk PR, pressbearbetning och engagerande digital kommunikation i relevanta kanaler anpassade för er målgrupp.
-                            </p>
-                            <a href="#projekt" class="highlight-link">Läs mer om tjänster &rarr;</a>
-                        </div>
-                    </div>
-
-                    <div class="highlight-column">
-                        <span class="highlight-number">02.</span>
-                        <div class="highlight-details">
-                            <h2 class="highlight-title">LÄR KÄNNA MIG</h2>
-                            <p class="highlight-desc">
-                                Bakgrund inom event marketing på Yrgo, PR på More Alliance samt mångårig erfarenhet inom butik, kundservice och hälsa.
-                            </p>
-                            <a href="#om-detaljer" class="highlight-link">Utforska min bakgrund &rarr;</a>
-                        </div>
-                    </div>
-
-                    <div class="highlight-column">
-                        <span class="highlight-number">03.</span>
-                        <div class="highlight-details">
-                            <h2 class="highlight-title">BOKA KONSULTATION</h2>
-                            <p class="highlight-desc">
-                                Vill ni bolla idéer, starta ett samarbete eller diskutera LIA-praktik? Låt oss ta en digital eller fysisk kaffe i Göteborg.
-                            </p>
-                            <a href="#kontakt" class="highlight-link">Boka ett möte &rarr;</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 5. WAYS TO WORK WITH ME (MOCKA & ESPRESSO) MED POLAROID-KLÄMMA -->
-            <section class="work-with-me" id="arbete">
-                <div class="section-container">
-                    <div class="work-header">
-                        <h2 class="giant-work-title">WAYS TO WORK WITH ME</h2>
-                    </div>
-
-                    <div class="work-grid">
-                        <!-- Vänster: Pinned Polaroid stack med silverklämma -->
-                        <div class="polaroid-showcase">
-                            <div class="polaroid-stack">
-                                <!-- Bakre polaroid (vinklad fashionelement) -->
-                                <div class="polaroid-card polaroid-back">
-                                    <div class="polaroid-inner">
-                                        <img src="img/polaroid-creative.jpg" alt="Kreativ modereferens och magasin" loading="lazy">
-                                        <span class="polaroid-caption">Vogue & Creative Mood</span>
-                                    </div>
-                                </div>
-
-                                <!-- Främre polaroid med Matildas porträtt -->
-                                <div class="polaroid-card polaroid-front">
-                                    <div class="polaroid-inner">
-                                        <img src="img/IMG_8986.jpeg" alt="Matilda Cederström porträtt" loading="lazy">
-                                        <span class="polaroid-caption">Matilda • Göteborg 2026</span>
-                                    </div>
-                                </div>
-
-                                <!-- Realistisk metallklämma högst upp -->
-                                <div class="binder-clip" aria-hidden="true">
-                                    <div class="clip-loop"></div>
-                                    <div class="clip-body"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Höger: Redaktionell lista över samarbetsformer -->
-                        <div class="work-offerings">
-                            <div class="offering-item">
-                                <span class="offering-tag">01 / RÅDGIVNING</span>
-                                <h3 class="offering-title">1:1 PR & Varumärkesstrategi</h3>
-                                <p class="offering-desc">
-                                    Från mediekontakter och pressmeddelanden till att hitta rätt tonalitet och positionering för ert varumärke.
-                                </p>
-                            </div>
-
-                            <div class="offering-item">
-                                <span class="offering-tag">02 / UPPLEVELSE</span>
-                                <h3 class="offering-title">Event Marketing & Koncept</h3>
-                                <p class="offering-desc">
-                                    Planering och koordinering av upplevelsebaserade events, produktlanseringar och varumärkesaktiveringar som skapar snackisar.
-                                </p>
-                            </div>
-
-                            <div class="offering-item">
-                                <span class="offering-tag">03 / DIGITALT</span>
-                                <h3 class="offering-title">Digital Marknadsföring & Webb</h3>
-                                <p class="offering-desc">
-                                    Målgruppsanpassat innehåll, strukturering av webbnärvaro och analys av kundresan för mätbara resultat.
-                                </p>
-                            </div>
-
-                            <div class="offering-cta">
-                                <a href="#kontakt" class="work-btn">Starta ett samarbete</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 6. ERFARENHET & PROJEKT -->
-            <section class="projects-section" id="projekt">
-                <div class="section-container">
-                    <div class="section-header-row">
-                        <div>
-                            <span class="section-eyebrow">PORTFOLIO</span>
-                            <h2 class="section-heading-serif">Erfarenhet & Projekt</h2>
-                        </div>
-                        <p class="section-header-desc">
-                            En kombination av strategisk PR, praktisk eventledning och modern webbutveckling.
-                        </p>
-                    </div>
-
-                    <div class="projects-grid">
-                        <!-- Projekt 1: More PR -->
-                        <article class="project-card">
-                            <div class="project-media">
-                                <img src="img/projekt-1.jpg" alt="PR-arbete och mediekontakter" loading="lazy">
-                                <span class="project-pill">PR & Media</span>
-                            </div>
-                            <div class="project-content">
-                                <span class="project-meta">More PR | More Alliance · Göteborg</span>
-                                <h3>PR-konsult</h3>
-                                <p>
-                                    Arbetade operativt som PR-konsult med fokus på mediekontakter, presstexter och strategisk opinionsbildning för växande varumärken.
-                                </p>
-                                <button type="button" class="project-details-btn" data-modal="morepr">Visa detaljer</button>
-                            </div>
-                        </article>
-
-                        <!-- Projekt 2: Yrgo -->
-                        <article class="project-card">
-                            <div class="project-media">
-                                <img src="img/projekt-2.jpg" alt="Event Marketing och planering" loading="lazy">
-                                <span class="project-pill">Event Marketing</span>
-                            </div>
-                            <div class="project-content">
-                                <span class="project-meta">Yrgo Högre Yrkesutbildning</span>
-                                <h3>Event Marketing & Management</h3>
-                                <p>
-                                    Specialiserad utbildning inom eventmarknadsföring, projektledning, budgetering och att skapa aktiveringar som skapar lojalitet.
-                                </p>
-                                <button type="button" class="project-details-btn" data-modal="yrgo">Visa detaljer</button>
-                            </div>
-                        </article>
-
-                        <!-- Projekt 3: LTU & IHM -->
-                        <article class="project-card">
-                            <div class="project-media">
-                                <img src="img/projekt-3.jpg" alt="Webbutveckling och digital arkitektur" loading="lazy">
-                                <span class="project-pill">Digital Webb</span>
-                            </div>
-                            <div class="project-content">
-                                <span class="project-meta">Luleå tekniska universitet & IHM</span>
-                                <h3>Webbutveckling & Digital Strategi</h3>
-                                <p>
-                                    Akademisk grund i HTML, CSS och modern frontend kombinerat med fördjupad digital marknadsföring på IHM Business School.
-                                </p>
-                                <button type="button" class="project-details-btn" data-modal="webb">Visa detaljer</button>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 7. DETALJERAD OM MIG SEKTION -->
-            <section class="about-detail-section" id="om-detaljer">
-                <div class="section-container about-detail-grid">
-                    <div class="about-image-col">
-                        <div class="framed-portrait">
-                            <img src="img/IMG_8986.jpeg" alt="Matilda Cederström" loading="lazy">
-                            <div class="portrait-caption-box">
-                                <span class="caption-title">Matilda Cederström</span>
-                                <span class="caption-sub">Göteborg, Sverige</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-text-col">
-                        <span class="section-eyebrow">BAKGRUND & VISION</span>
-                        <h2 class="section-heading-serif">Kreativitet med strategisk förankring</h2>
-                        <div class="rich-text">
-                            <p>
-                                För mig handlar digital marknadsföring om balansen mellan det visuellt tilltalande och det mätbart effektiva. Med en bakgrund som rör sig mellan PR-byråns snabbrörliga tempo och eventvärldens detaljfokus har jag lärt mig vikten av tydligt berättande.
-                            </p>
-                            <p>
-                                Just nu fördjupar jag mig inom <strong>Digital Marketing Specialist</strong> på IHM i Göteborg. Där kombineras datadriven analys, SEO, digital annonsering och CRM med strategiskt varumärkesbyggande.
-                            </p>
-                        </div>
-
-                        <div class="stats-row">
-                            <div class="stat-box">
-                                <span class="stat-number">2028</span>
-                                <span class="stat-label">Examen IHM Göteborg</span>
-                            </div>
-                            <div class="stat-box">
-                                <span class="stat-number">PR</span>
-                                <span class="stat-label">More Alliance erfarenhet</span>
-                            </div>
-                            <div class="stat-box">
-                                <span class="stat-number">100%</span>
-                                <span class="stat-label">Engagemang & driv</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 8. KONTAKT & BOKNING -->
-            <section class="contact-section" id="kontakt">
-                <div class="section-container">
-                    <div class="contact-wrapper">
-                        <div class="contact-info-side">
-                            <span class="section-eyebrow">KONTAKT & SAMARBETEN</span>
-                            <h2 class="contact-title">Låt oss skapa något <em>extraordinärt</em> tillsammans.</h2>
-                            <p class="contact-text">
-                                Vill du diskutera ett potentiellt samarbete, anlita mig för ett projekt eller höra mer om min profil inför framtida uppdrag? Jag ser fram emot att höra från dig.
-                            </p>
-
-                            <div class="contact-links-list">
-                                <a href="mailto:matilda.cederstrom@live.se" class="contact-pill-link">
-                                    <span class="pill-icon">✉</span>
-                                    <span>matilda.cederstrom@live.se</span>
-                                </a>
-                                <a href="https://www.linkedin.com/in/matilda-cederstr%C3%B6m-b0705b335" target="_blank" rel="noopener" class="contact-pill-link">
-                                    <span class="pill-icon">↗</span>
-                                    <span>Matilda Cederström på LinkedIn</span>
-                                </a>
-                                <div class="contact-pill-link location-pill">
-                                    <span class="pill-icon">📍</span>
-                                    <span>Baserad i Göteborg, Sverige</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Interaktivt formulär -->
-                        <div class="contact-form-side">
-                            <form id="kontakt-form" class="editorial-form">
-                                <h3 class="form-title">Skicka ett meddelande</h3>
-                                
-                                <div class="form-group">
-                                    <label for="namn">Ditt namn</label>
-                                    <input type="text" id="namn" name="namn" placeholder="Anna Andersson" required>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="epost">E-postadress</label>
-                                    <input type="email" id="epost" name="epost" placeholder="anna@foretag.se" required>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="amne">Vad gäller förfrågan?</label>
-                                    <select id="amne" name="amne">
-                                        <option value="konsultation">1:1 PR-konsultation / Rådgivning</option>
-                                        <option value="event">Event Marketing & Upplevelser</option>
-                                        <option value="digital">Digital strategi & Webb</option>
-                                        <option value="lia">LIA-praktik / Anställning</option>
-                                        <option value="annat">Övrigt / Fika i Göteborg</option>
-                                    </select>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="meddelande">Meddelande</label>
-                                    <textarea id="meddelande" name="meddelande" rows="4" placeholder="Berätta kort om ert varumärke och era tankar..." required></textarea>
-                                </div>
-
-                                <button type="submit" class="submit-btn">Skicka förfrågan &rarr;</button>
-                                <div id="form-feedback" class="form-feedback" hidden></div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!-- 9. SIDFOT -->
-        <footer class="editorial-footer">
-            <div class="footer-container">
-                <div class="footer-brand-row">
-                    <span class="footer-logo">MATILDA CEDERSTRÖM</span>
-                    <p class="footer-tagline">Digital Marketing Specialist · PR · Event · Göteborg</p>
-                </div>
-
-                <div class="footer-bottom-row">
-                    <p>© 2026 Matilda Cederström. Handkodad med HTML, CSS och JavaScript.</p>
-                    <a href="#start" class="back-to-top">Tillbaka till toppen ↑</a>
-                </div>
-            </div>
-        </footer>
-
-    </div>
-
-    <!-- Interaktiv modal för projektdetaljer -->
-    <div id="project-modal" class="modal-backdrop" hidden>
-        <div class="modal-dialog">
-            <button class="modal-close-btn" id="modal-close" aria-label="Stäng modal">&times;</button>
-            <div id="modal-body" class="modal-body-content"></div>
+            </nav>
         </div>
-    </div>
+    </header>
+
+    <main>
+        <section class="hero-section" id="hero">
+            <div class="hero-grid">
+                <div class="hero-content-col">
+                    <div class="hero-brand-frame">
+                        <div class="hero-title-container">
+                            <h1 class="hero-portfolio-title" aria-label="Matilda Cederström"><span>M</span><span class="hero-monogram-divider" aria-hidden="true"></span><span>C</span></h1>
+                        </div>
+                        <p class="hero-role-title">DIGITAL MARKETING SPECIALIST</p>
+                    </div>
+                </div>
+                <div class="hero-bottom-left">GÖTEBORG<br>STUDERAR PÅ IHM BUSINESS SCHOOL</div>
+                <div class="hero-bottom-right">DIGITAL MARKETING<br>SPECIALIST · 2026–PÅGÅENDE</div>
+                <div class="hero-profile"><img src="img/IMG_8986.jpeg" alt="Matilda Cederström" fetchpriority="high"></div>
+            </div>
+        </section>
+
+        <div class="category-ribbon" aria-label="Utbildning och erfarenhetsområden">
+            <div class="category-ribbon-track">
+                <div class="category-ribbon-inner">
+                    <span>DIGITAL MARKNADSFÖRING</span><span class="bullet">✦</span><span>PR &amp; KOMMUNIKATION</span><span class="bullet">✦</span><span>CONTENT</span><span class="bullet">✦</span><span>EVENT</span><span class="bullet">✦</span><span>KUNDSERVICE</span>
+                </div>
+                <div class="category-ribbon-inner" aria-hidden="true">
+                    <span>DIGITAL MARKNADSFÖRING</span><span class="bullet">✦</span><span>PR &amp; KOMMUNIKATION</span><span class="bullet">✦</span><span>CONTENT</span><span class="bullet">✦</span><span>EVENT</span><span class="bullet">✦</span><span>KUNDSERVICE</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="editorial-section about-section" id="om-mig">
+            <div class="site-container">
+                <div class="about-grid">
+                    <div class="about-content-col">
+                        <span class="section-tag">01 / OM MIG</span>
+                        <h2 class="section-main-heading">Om mig</h2>
+                        <div class="about-copy-columns">
+                            <p>Jag drivs av att förstå vad som fångar människors uppmärksamhet och vad som får varumärken att nå igenom bruset.</p>
+                            <p>Med erfarenhet inom service, kommunikation och event vill jag utvecklas inom digital marknadsföring och utforska samspelet mellan kreativitet, strategi och analys.</p>
+                        </div>
+                    </div>
+                    <div class="about-visual-col">
+                        <div class="editorial-image-card">
+                            <div class="editorial-image-frame"><img src="img/matilda-about-portrait.png"
+                                    alt="Matilda i en varm, bokfylld miljö" loading="lazy"></div>
+                            <div class="image-card-caption">
+                                <p class="caption-title">Digital Marketing Specialist</p>
+                                <p class="caption-desc">IHM Business School · 2026–pågående</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="editorial-feature" aria-label="Erfarenhet inom PR och kommunikation">
+            <div class="editorial-feature-image"><img src="img/matilda-intro-background.jpg" alt="Matilda arbetar vid sin laptop" loading="lazy"></div>
+            <div class="editorial-feature-copy"><div class="brand-lockup-frame"><div class="feature-monogram" aria-label="M C"><span>M</span><span class="feature-monogram-divider" aria-hidden="true"></span><span>C</span></div><span class="section-tag feature-role">DIGITAL MARKETING SPECIALIST</span></div></div>
+        </section>
+
+        <section class="editorial-section skills-section" id="kompetenser">
+            <div class="category-ribbon" aria-label="Utbildning och erfarenhetsområden">
+                <div class="category-ribbon-track">
+                    <div class="category-ribbon-inner">
+                        <span>DIGITAL MARKNADSFÖRING</span><span class="bullet">✦</span><span>PR &amp; KOMMUNIKATION</span><span class="bullet">✦</span><span>CONTENT</span><span class="bullet">✦</span><span>EVENT</span><span class="bullet">✦</span><span>KUNDSERVICE</span>
+                    </div>
+                    <div class="category-ribbon-inner" aria-hidden="true">
+                        <span>DIGITAL MARKNADSFÖRING</span><span class="bullet">✦</span><span>PR &amp; KOMMUNIKATION</span><span class="bullet">✦</span><span>CONTENT</span><span class="bullet">✦</span><span>EVENT</span><span class="bullet">✦</span><span>KUNDSERVICE</span>
+                    </div>
+                </div>
+            </div>
+            <div class="site-container">
+                <div class="section-heading-block"><span class="section-tag">02 / KOMPETENSER</span>
+                    <h2 class="section-main-heading">Kompetenser <em>och</em> fokusområden</h2>
+                    <p class="section-intro-text">Kursområden från min utbildning och erfarenheter från kommunikation,
+                        PR och service.</p>
+                </div>
+                <div class="skills-duo-grid">
+                    <div class="skills-category-card ihm-logo-card">
+                        <div class="study-image"><img src="img/ihm-business-school.jpeg" alt="IHM Business School-logotyp på rosa bakgrund" loading="lazy"></div>
+                        <div class="category-card-header"><span class="card-eyebrow">IHM BUSINESS SCHOOL ·
+                                2026–PÅGÅENDE</span>
+                            <h3 class="category-title">Digital Marketing Specialist</h3>
+                            <p class="category-desc">Relevanta kurser inför LIA våren 2027</p>
+                        </div>
+                        <ul class="skills-refined-list">
+                            <li class="skill-row"><span class="skill-bullet" aria-hidden="true">•</span>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">Marknadsföring</h4>
+                                </div>
+                            </li>
+                            <li class="skill-row"><span class="skill-bullet" aria-hidden="true">•</span>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">AI &amp; Tech</h4>
+                                </div>
+                            </li>
+                            <li class="skill-row"><span class="skill-bullet" aria-hidden="true">•</span>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">Sökordsoptimering / SEO</h4>
+                                </div>
+                            </li>
+                            <li class="skill-row"><span class="skill-bullet" aria-hidden="true">•</span>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">Paid media – social och SEM</h4>
+                                </div>
+                            </li>
+                            <li class="skill-row"><span class="skill-bullet" aria-hidden="true">•</span>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">Content &amp; Influencer Marketing</h4>
+                                </div>
+                            </li>
+                            <li class="skill-row"><span class="skill-bullet" aria-hidden="true">•</span>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">Tracking &amp; digital analys</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skills-category-card complementary-card yrgo-logo-card">
+                        <div class="study-image"><img src="img/yrgo-logo.png" alt="YRGO-logotyp på röd bakgrund" loading="lazy"></div>
+                        <div class="category-card-header"><span class="card-eyebrow">YRGO, LINDHOLMEN · 2024–2026</span>
+                            <h3 class="category-title">Event Marketing &amp; Management</h3>
+                        </div>
+                        <ul class="skills-refined-list">
+                            <li class="skill-row"><span class="skill-bullet" aria-hidden="true">•</span>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">Affärsekonomi</h4>
+                                </div>
+                            </li>
+                            <li class="skill-row"><span class="skill-bullet" aria-hidden="true">•</span>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">Digitala projektledningsverktyg</h4>
+                                </div>
+                            </li>
+                            <li class="skill-row"><span class="skill-bullet" aria-hidden="true">•</span>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">Event Marketing</h4>
+                                </div>
+                            </li>
+                            <li class="skill-row"><span class="skill-bullet" aria-hidden="true">•</span>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">Eventproduktion</h4>
+                                </div>
+                            </li>
+                            <li class="skill-row"><span class="skill-bullet" aria-hidden="true">•</span>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">Examensarbete</h4>
+                                </div>
+                            </li>
+                            <li class="skill-row"><span class="skill-bullet" aria-hidden="true">•</span>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">Kommunikation</h4>
+                                </div>
+                            </li>
+                            <li class="skill-row"><span class="skill-bullet" aria-hidden="true">•</span>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">Kreativitet och idéutveckling</h4>
+                                </div>
+                            </li>
+                            <li class="skill-row"><span class="skill-bullet" aria-hidden="true">•</span>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">LIA</h4>
+                                </div>
+                            </li>
+                            <li class="skill-row"><span class="skill-bullet" aria-hidden="true">•</span>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">Marknadskommunikation</h4>
+                                </div>
+                            </li>
+                            <li class="skill-row"><span class="skill-bullet" aria-hidden="true">•</span>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">Organisation och ledarskap</h4>
+                                </div>
+                            </li>
+                            <li class="skill-row"><span class="skill-bullet" aria-hidden="true">•</span>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">Project Management</h4>
+                                </div>
+                            </li>
+                            <li class="skill-row"><span class="skill-bullet" aria-hidden="true">•</span>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">Säkerhet, hållbarhet och tillgänglighet</h4>
+                                </div>
+                            </li>
+                            <li class="skill-row"><span class="skill-bullet" aria-hidden="true">•</span>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">Säljteknik</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skills-category-card pr-card more-pr-logo-card">
+                        <div class="study-image"><img src="img/more-pr-logo.png" alt="MORE PR-logotyp" loading="lazy"></div>
+                        <div class="category-card-header"><span class="card-eyebrow">MORE PR · 2025–2026</span>
+                            <h3 class="category-title">PR &amp; kommunikation</h3>
+                            <p class="category-desc">LIA på PR- och kommunikationsbyrå</p>
+                        </div>
+                        <ul class="skills-refined-list">
+                            <li class="skill-row"><span class="skill-bullet" aria-hidden="true">•</span>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">Innehållsproduktion för sociala medier, pressreleaser och artiklar</h4>
+                                </div>
+                            </li>
+                            <li class="skill-row"><span class="skill-bullet" aria-hidden="true">•</span>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">Intervjuer och nyheter i Mynewsdesk</h4>
+                                </div>
+                            </li>
+                            <li class="skill-row"><span class="skill-bullet" aria-hidden="true">•</span>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">Medierapportering</h4>
+                                </div>
+                            </li>
+                            <li class="skill-row"><span class="skill-bullet" aria-hidden="true">•</span>
+                                <div class="skill-info">
+                                    <h4 class="skill-name">Klear och Meltwater</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <section class="history-brand-band" aria-label="Matilda Cederström, Digital Marketing Specialist">
+                    <div class="brand-lockup-frame">
+                        <div class="feature-monogram" aria-hidden="true"><span>M</span><span class="feature-monogram-divider"></span><span>C</span></div>
+                        <p class="feature-role">DIGITAL MARKETING SPECIALIST</p>
+                    </div>
+                </section>
+                <div class="category-ribbon experience-ribbon" aria-label="Utbildning och erfarenhetsområden">
+                    <div class="category-ribbon-track">
+                        <div class="category-ribbon-inner">
+                            <span>DIGITAL MARKNADSFÖRING</span><span class="bullet">✦</span><span>PR &amp; KOMMUNIKATION</span><span class="bullet">✦</span><span>CONTENT</span><span class="bullet">✦</span><span>EVENT</span><span class="bullet">✦</span><span>KUNDSERVICE</span>
+                        </div>
+                        <div class="category-ribbon-inner" aria-hidden="true">
+                            <span>DIGITAL MARKNADSFÖRING</span><span class="bullet">✦</span><span>PR &amp; KOMMUNIKATION</span><span class="bullet">✦</span><span>CONTENT</span><span class="bullet">✦</span><span>EVENT</span><span class="bullet">✦</span><span>KUNDSERVICE</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-block" id="bakgrund">
+                    <div class="section-heading-block"><span class="section-tag">03 / BAKGRUND</span>
+                        <h2 class="section-main-heading">Erfarenhet och utbildning</h2>
+                    </div>
+                    <div class="history-grid">
+                        <div class="history-column">
+                            <div class="history-column-header">
+                                <h3 class="history-col-title">Arbetslivserfarenheter</h3>
+                            </div>
+                            <div class="timeline-list">
+                                <article class="timeline-item">
+                                    <div class="timeline-meta"><span class="timeline-period">2025–2026</span></div>
+                                    <div class="timeline-body">
+                                        <h4 class="timeline-role">More PR</h4>
+                                        <p class="timeline-company">LIA PR- &amp; Kommunikationsbyrå</p>
+                                        <p class="timeline-description">Innehållsproduktion för sociala medier, pressreleaser, intervjuer, artiklar,
+                                            nyheter i Mynewsdesk, medierapportering samt Klear och Meltwater.</p>
+                                    </div>
+                                </article>
+                                <article class="timeline-item">
+                                    <div class="timeline-meta"><span class="timeline-period">2022–2024</span></div>
+                                    <div class="timeline-body">
+                                        <h4 class="timeline-role">Nordic Wellness</h4>
+                                        <p class="timeline-company">Instruktör</p>
+                                        <p class="timeline-description">Instruerade och coachade deltagare samt skapade
+                                            cykelpass från grunden.</p>
+                                    </div>
+                                </article>
+                                <article class="timeline-item">
+                                    <div class="timeline-meta"><span class="timeline-period">2021–2024</span></div>
+                                    <div class="timeline-body">
+                                        <h4 class="timeline-role">J&amp;V Store</h4>
+                                        <p class="timeline-company">Butiksmedarbetare, klädbutik</p>
+                                        <p class="timeline-description">Leveranser, ordning i butiken, kassaförsäljning
+                                            och rådgivning.</p>
+                                    </div>
+                                </article>
+                                <article class="timeline-item">
+                                    <div class="timeline-meta"><span class="timeline-period">2020–2023</span></div>
+                                    <div class="timeline-body">
+                                        <h4 class="timeline-role">ICA City Knalleland</h4>
+                                        <p class="timeline-company">Kassaledare &amp; Butiksmedarbetare</p>
+                                        <p class="timeline-description">Ansvar för kassa och förbutik samt hantering av
+                                            lediga pass i schemat.</p>
+                                    </div>
+                                </article>
+                                <article class="timeline-item">
+                                    <div class="timeline-meta"><span class="timeline-period">2018–2020</span></div>
+                                    <div class="timeline-body">
+                                        <h4 class="timeline-role">Nelly.com</h4>
+                                        <p class="timeline-company">Customer Experience Agent</p>
+                                        <p class="timeline-description">Kundservice via chatt och mejl om leveranser,
+                                            fakturor, betalningar och produkter.</p>
+                                    </div>
+                                </article>
+                                <article class="timeline-item">
+                                    <div class="timeline-meta"><span class="timeline-period">Tidigare erfarenheter</span></div>
+                                    <div class="timeline-body">
+                                        <h4 class="timeline-role">Flera service- och assistansroller</h4>
+                                        <p class="timeline-description">Instruktör och receptionist på Nordic Wellness, butiksmedarbetare på Jollyroom och EKO, ordermottagare/lager på Home Shop, personlig assistent och brevbärare.</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="history-column">
+                            <div class="history-column-header">
+                                <h3 class="history-col-title">Utbildning</h3>
+                            </div>
+                            <div class="timeline-list">
+                                <article class="timeline-item highlight-edu">
+                                    <div class="timeline-meta"><span class="timeline-period">2026–pågående</span></div>
+                                    <div class="timeline-body">
+                                        <h4 class="timeline-role">Digital Marketing Specialist</h4>
+                                        <p class="timeline-company">IHM Business School</p>
+                                        <p class="timeline-description">Avslutande kurser inför praktikstart.</p>
+                                        <ul class="timeline-bullets">
+                                            <li>Marknadsföring</li>
+                                            <li>AI &amp; Tech</li>
+                                            <li>Sökordsoptimering / SEO</li>
+                                            <li>Paid media – social och SEM</li>
+                                            <li>Content &amp; Influencer Marketing</li>
+                                            <li>Tracking &amp; digital analys</li>
+                                        </ul>
+                                    </div>
+                                </article>
+                                <article class="timeline-item">
+                                    <div class="timeline-meta"><span class="timeline-period">2025–2026</span></div>
+                                    <div class="timeline-body">
+                                        <h4 class="timeline-role">Webbutveckling 1 – Introduktion</h4>
+                                        <p class="timeline-company">Luleå tekniska universitet</p>
+                                    </div>
+                                </article>
+                                <article class="timeline-item">
+                                    <div class="timeline-meta"><span class="timeline-period">2024–2026</span></div>
+                                    <div class="timeline-body">
+                                        <h4 class="timeline-role">Event Marketing &amp; Management</h4>
+                                        <p class="timeline-company">YRGO, Lindholmen</p>
+                                        <ul class="timeline-bullets">
+                                            <li>Affärsekonomi</li>
+                                            <li>Digitala projektledningsverktyg</li>
+                                            <li>Event Marketing och eventproduktion</li>
+                                            <li>Kommunikation och marknadskommunikation</li>
+                                            <li>Kreativitet och idéutveckling</li>
+                                            <li>Organisation, ledarskap och Project Management</li>
+                                            <li>Säkerhet, hållbarhet och tillgänglighet</li>
+                                            <li>Säljteknik</li>
+                                            <li>LIA och examensarbete</li>
+                                        </ul>
+                                    </div>
+                                </article>
+                                <article class="timeline-item">
+                                    <div class="timeline-meta"><span class="timeline-period">2020–2021</span></div>
+                                    <div class="timeline-body">
+                                        <h4 class="timeline-role">Hälsocoach</h4>
+                                        <p class="timeline-company">Hjälmareds folkhögskola</p>
+                                    </div>
+                                </article>
+                                <article class="timeline-item">
+                                    <div class="timeline-meta"><span class="timeline-period">2010–2013</span></div>
+                                    <div class="timeline-body">
+                                        <h4 class="timeline-role">Hantverksprogrammet – Frisör</h4>
+                                        <p class="timeline-company">Almåsgymnasiet</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="credentials-band" aria-label="Utbildnings- och erfarenhetsområden">
+            <span>Digital marknadsföring</span><span>Event Marketing &amp; Management</span><span>PR &amp;
+                kommunikation</span>
+        </div>
+
+        <section class="contact-section" id="kontakt">
+            <div class="site-container contact-layout">
+                <div><span class="section-tag">04 / KONTAKT</span>
+                    <h2 class="section-main-heading">Kontakta mig</h2>
+                    <p class="section-intro-text">Göteborg</p>
+                    <p class="contact-details"><a href="tel:+46768020301">+46 76 802 03 01</a><br><a href="mailto:matilda.cederstrom@live.se">matilda.cederstrom@live.se</a></p>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="contact-field"><label for="name">Namn</label><input id="name" name="name" autocomplete="name" required></div>
+                    <div class="contact-field"><label for="email">E-post</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+                    <div class="contact-field message-field"><label for="message">Meddelande</label><textarea id="message" name="message" rows="5" required></textarea></div>
+                    <button class="btn-view-work" type="submit"><span>SKICKA MEDDELANDE</span><span
+                            aria-hidden="true">→</span></button>
+                    <p class="form-status-msg" id="formStatusMsg" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+
+        <section class="language-strip" aria-label="Språk"><div class="site-container"><span class="section-tag" data-keep-label>SPRÅK</span><p><button type="button" class="language-strip-option" data-language="sv" data-keep-label aria-pressed="true">Svenska</button> <span>·</span> <button type="button" class="language-strip-option" data-language="en" data-keep-label aria-pressed="false">Engelska</button></p></div></section>
+    </main>
+    <footer class="site-footer">
+        <span class="footer-brand">Matilda Cederström</span>
+        <div class="footer-logo" aria-label="M C, Digital Marketing Specialist">
+            <div class="footer-monogram"><span>M</span><span class="footer-monogram-divider" aria-hidden="true"></span><span>C</span></div>
+            <span class="footer-role">DIGITAL MARKETING SPECIALIST</span>
+        </div>
+        <a href="#hero">Till toppen ↑</a>
+    </footer>
 </body>
 
 </html>
