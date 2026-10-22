@@ -2203,8 +2203,18 @@ body[data-theme="dark"] .portfolio-project-card { border-color: rgba(241, 235, 2
   content: none !important;
   display: none !important;
 }
-.contact-layout { position: relative; z-index: 1; }
+.contact-layout {
+  position: relative;
+  z-index: 1;
+  padding: clamp(26px, 4vw, 48px);
+  border: 1px solid rgba(40, 33, 28, .12);
+  background: rgba(255, 255, 255, .56);
+}
 body[data-theme="dark"] .contact-section {
   background: #29231f !important;
   background-image: none !important;
+}
+body[data-theme="dark"] .contact-layout {
+  border-color: rgba(241, 235, 227, .2);
+  background: rgba(255, 255, 255, .035);
 }
