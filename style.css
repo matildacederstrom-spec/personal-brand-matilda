@@ -1672,6 +1672,7 @@ body[data-theme="dark"] .language-option.is-active { color: #f1ebe3; }
 .hero-section {
   min-height: min(100vh, 790px);
   background: linear-gradient(rgba(25, 22, 20, .38), rgba(25, 22, 20, .38)), url("img/hero-portrait.jpg") center 38% / cover no-repeat;
+  background-size: auto, 88% auto;
   color: #fffaf4;
 }
 .hero-section .hero-grid { min-height: min(100vh, 790px); }
