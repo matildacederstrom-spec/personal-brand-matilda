@@ -1723,3 +1723,7 @@ body[data-theme="dark"] .hero-section .hero-role-title { color: #fffaf4 !importa
 
 /* Align the header navigation to the left edge. */
 .nav-menu { justify-content: flex-start; width: 100%; }
+body[data-theme="dark"] .site-header {
+  background: transparent !important;
+  border-bottom: 0 !important;
+}
