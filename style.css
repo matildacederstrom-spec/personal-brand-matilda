@@ -2025,15 +2025,21 @@ body[data-theme="dark"] .about-copy-brand-role { color: #c7bdb2; }
   letter-spacing: .12em;
   text-transform: uppercase;
 }
-.portfolio-project-visual img {
+.portfolio-project-image-frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-top: clamp(20px, 3vw, 34px);
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+.portfolio-project-image-frame img {
   display: block;
   width: 100%;
-  height: auto !important;
-  max-height: none;
-  aspect-ratio: 16 / 9;
+  height: 100% !important;
+  min-height: 0 !important;
+  max-height: none !important;
   object-fit: contain;
-  margin-top: clamp(20px, 3vw, 34px);
-  border: 1px solid var(--line);
+  object-position: center;
 }
 .portfolio-project-content h3 {
   margin: 0 0 16px;
