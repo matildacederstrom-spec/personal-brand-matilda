@@ -1679,6 +1679,7 @@ body[data-theme="dark"] .language-option.is-active { color: #f1ebe3; }
 .skills-section .skills-duo-grid .category-desc,
 .skills-section .skills-duo-grid .skill-name { font-size: 14px; }
 .skills-section .skills-duo-grid .card-eyebrow { font-size: 12px; }
+.skills-section .skills-duo-grid .card-eyebrow { text-transform: none; }
 .experience-block .timeline-description,
 .experience-block .timeline-bullets { font-size: 14px; }
 .experience-block .timeline-company,
