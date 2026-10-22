@@ -1670,10 +1670,29 @@ body[data-theme="dark"] .language-option.is-active { color: #f1ebe3; }
   background-color: rgba(255, 255, 255, .58);
 }
 .hero-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   min-height: min(100vh, 790px);
-  background: linear-gradient(rgba(25, 22, 20, .38), rgba(25, 22, 20, .38)), url("img/hero-portrait.jpg") center 38% / cover no-repeat;
-  background-size: auto, 88% auto;
+  background-color: #292725;
   color: #fffaf4;
+}
+.hero-section::before,
+.hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.hero-section::before {
+  z-index: -2;
+  background: linear-gradient(rgba(25, 22, 20, .38), rgba(25, 22, 20, .38)), url("img/hero-portrait.jpg") center 38% / cover no-repeat;
+  filter: blur(20px);
+  transform: scale(1.04);
+}
+.hero-section::after {
+  z-index: -1;
+  background: linear-gradient(rgba(25, 22, 20, .38), rgba(25, 22, 20, .38)), url("img/hero-portrait.jpg") center 38% / 88% auto no-repeat;
 }
 .hero-section .hero-grid { min-height: min(100vh, 790px); }
 .hero-section .hero-brand-frame { border-color: rgba(255, 250, 244, .8); }
@@ -1681,7 +1700,7 @@ body[data-theme="dark"] .language-option.is-active { color: #f1ebe3; }
 .hero-section .hero-role-title { color: #fffaf4; }
 .hero-section .hero-portfolio-title .hero-monogram-divider { background: #fffaf4; }
 body[data-theme="dark"] .hero-section {
-  background: linear-gradient(rgba(25, 22, 20, .48), rgba(25, 22, 20, .48)), url("img/hero-portrait.jpg") right center / auto 100% no-repeat !important;
+  background-color: #201e1c !important;
 }
 body[data-theme="dark"] .hero-section .hero-brand-frame { border-color: rgba(255, 250, 244, .7); }
 body[data-theme="dark"] .hero-section .hero-portfolio-title,
@@ -1692,6 +1711,8 @@ body[data-theme="dark"] .hero-section .hero-role-title { color: #fffaf4 !importa
     background: linear-gradient(rgba(25, 22, 20, .38), rgba(25, 22, 20, .38)), url("img/hero-portrait.jpg") center 35% / cover no-repeat;
     color: #fffaf4;
   }
+  .hero-section::before,
+  .hero-section::after { display: none; }
   .hero-section .hero-grid { min-height: min(100svh, 790px); }
   .hero-section .hero-brand-frame { border-color: rgba(255, 250, 244, .8); }
   .hero-section .hero-portfolio-title,
