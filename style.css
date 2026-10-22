@@ -1671,14 +1671,14 @@ body[data-theme="dark"] .language-option.is-active { color: #f1ebe3; }
 }
 .hero-section {
   min-height: min(100vh, 790px);
-  background: #e5dfd8 url("img/hero-portrait.jpg") right center / auto 100% no-repeat;
-  color: #28211c;
+  background: linear-gradient(rgba(25, 22, 20, .38), rgba(25, 22, 20, .38)), url("img/hero-portrait.jpg") center 38% / cover no-repeat;
+  color: #fffaf4;
 }
 .hero-section .hero-grid { min-height: min(100vh, 790px); }
-.hero-section .hero-brand-frame { border-color: rgba(40, 33, 28, .42); }
+.hero-section .hero-brand-frame { border-color: rgba(255, 250, 244, .8); }
 .hero-section .hero-portfolio-title,
-.hero-section .hero-role-title { color: #28211c; }
-.hero-section .hero-portfolio-title .hero-monogram-divider { background: #82776d; }
+.hero-section .hero-role-title { color: #fffaf4; }
+.hero-section .hero-portfolio-title .hero-monogram-divider { background: #fffaf4; }
 body[data-theme="dark"] .hero-section {
   background: linear-gradient(rgba(25, 22, 20, .48), rgba(25, 22, 20, .48)), url("img/hero-portrait.jpg") right center / auto 100% no-repeat !important;
 }
