@@ -2005,11 +2005,11 @@ body[data-theme="dark"] .about-copy-brand-role { color: #c7bdb2; }
   padding: clamp(42px, 5vw, 62px) 0 clamp(40px, 5vw, 60px);
   color: var(--ink);
 }
-.portfolio-section .section-heading-block {
+.skills-section .portfolio-section .section-heading-block {
   margin: 0 0 clamp(22px, 3vw, 34px);
   text-align: left;
 }
-.portfolio-section .section-main-heading {
+.skills-section .portfolio-section .section-heading-block .section-main-heading {
   margin: 8px 0 0;
   color: var(--ink);
   font: 500 clamp(30px, 3.5vw, 42px)/1.05 var(--serif);
@@ -2042,7 +2042,7 @@ body[data-theme="dark"] .about-copy-brand-role { color: #c7bdb2; }
 }
 .portfolio-project-content p:last-child { margin-bottom: 0; }
 body[data-theme="dark"] .portfolio-section { color: #f1ebe3; }
-body[data-theme="dark"] .portfolio-section .section-main-heading,
+body[data-theme="dark"] .skills-section .portfolio-section .section-heading-block .section-main-heading,
 body[data-theme="dark"] .portfolio-project-content h3 { color: #f1ebe3; }
 body[data-theme="dark"] .portfolio-project-meta,
 body[data-theme="dark"] .portfolio-project-content p { color: #c7bdb2; }
@@ -2051,3 +2051,6 @@ body[data-theme="dark"] .portfolio-project-card { border-color: rgba(241, 235, 2
   .portfolio-section { margin-bottom: 42px; padding: 40px 0; }
   .portfolio-project-card { grid-template-columns: 1fr; gap: 16px; padding: 22px; }
 }
+
+/* Keep the separator in the gap between education and the portfolio entry. */
+.education-under-skills::after { bottom: calc(-1 * clamp(20px, 2vw, 30px)); }
