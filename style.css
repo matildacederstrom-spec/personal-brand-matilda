@@ -2138,3 +2138,67 @@ body[data-theme="dark"] .portfolio-project-card { border-color: rgba(241, 235, 2
   margin-left: 0;
   transform: none;
 }
+
+/* Use the monochrome portrait as a quiet, readable contact background. */
+.contact-section {
+  background-color: #fbfaf7 !important;
+  background-image: linear-gradient(rgba(251, 250, 247, .58), rgba(251, 250, 247, .58)), url("img/contact-background.jpg") !important;
+  background-position: center 43% !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+body[data-theme="dark"] .contact-section {
+  background-color: #29231f !important;
+  background-image: linear-gradient(rgba(30, 27, 25, .58), rgba(30, 27, 25, .58)), url("img/contact-background.jpg") !important;
+}
+
+/* Size the contact content to the wide 3:1 background image. */
+.contact-section {
+  min-height: clamp(500px, 38vw, 680px);
+  display: flex;
+  align-items: center;
+  padding: clamp(64px, 7vw, 96px) clamp(24px, 5vw, 58px) !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+.contact-layout {
+  width: min(100%, 1080px);
+  max-width: 1080px;
+  margin-inline: auto;
+  grid-template-columns: minmax(220px, .7fr) minmax(0, 1.3fr);
+  align-items: center;
+  gap: clamp(28px, 5vw, 72px);
+}
+.contact-form-column { margin-top: 0; }
+.contact-form-column > .section-main-heading { margin-top: 0; }
+.contact-info-column .contact-details { margin-top: 22px; }
+.contact-form { gap: 8px 16px; }
+.contact-form input { min-height: 48px; }
+.contact-form textarea { min-height: clamp(110px, 12vw, 160px); }
+
+@media (max-width: 700px) {
+  .contact-section {
+    min-height: 0;
+    display: block;
+    padding: 76px 22px 48px !important;
+    background-position: center !important;
+    background-size: cover !important;
+  }
+  .contact-layout {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .contact-form-column { margin-top: 0; }
+  .contact-form textarea { min-height: 132px; }
+}
+
+.contact-section .contact-form .btn-view-work {
+  background: #000 !important;
+  color: #fff !important;
+  border-color: #000 !important;
+}
+.contact-section .contact-form .btn-view-work:hover {
+  background: #222 !important;
+  border-color: #222 !important;
+}
