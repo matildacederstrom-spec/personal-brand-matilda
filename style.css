@@ -1669,3 +1669,6 @@ body[data-theme="dark"] .language-option.is-active { color: #f1ebe3; }
   border: 1px solid rgba(40, 33, 28, .08);
   background-color: rgba(255, 255, 255, .58);
 }
+.hero-section {
+  background: linear-gradient(rgba(28, 26, 24, .48), rgba(28, 26, 24, .48)), url("img/hero-laptop.jpg") center 45% / cover no-repeat;
+}
