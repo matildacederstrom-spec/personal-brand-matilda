@@ -1667,5 +1667,5 @@ body[data-theme="dark"] .language-option.is-active { color: #f1ebe3; }
 .skills-section .skills-duo-grid .pr-card {
   padding: clamp(20px, 3vw, 38px);
   border: 1px solid rgba(40, 33, 28, .08);
-  background-color: rgba(213, 204, 193, .24);
+  background-color: rgba(255, 255, 255, .58);
 }
