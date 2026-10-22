@@ -2145,27 +2145,13 @@ body[data-theme="dark"] .portfolio-project-card { border-color: rgba(241, 235, 2
   transform: none;
 }
 
-/* Use the monochrome portrait as a quiet, readable contact background. */
-.contact-section {
-  background-color: #fbfaf7 !important;
-  background-image: linear-gradient(rgba(251, 250, 247, .58), rgba(251, 250, 247, .58)), url("img/contact-background.jpg") !important;
-  background-position: center 43% !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-}
-body[data-theme="dark"] .contact-section {
-  background-color: #29231f !important;
-  background-image: linear-gradient(rgba(30, 27, 25, .58), rgba(30, 27, 25, .58)), url("img/contact-background.jpg") !important;
-}
-
 /* Size the contact content to the wide 3:1 background image. */
 .contact-section {
   min-height: clamp(500px, 38vw, 680px);
   display: flex;
   align-items: center;
   padding: clamp(64px, 7vw, 96px) clamp(24px, 5vw, 58px) !important;
-  background-position: center !important;
-  background-size: cover !important;
+  background: #fbfaf7 !important;
 }
 .contact-layout {
   width: min(100%, 1080px);
@@ -2187,8 +2173,6 @@ body[data-theme="dark"] .contact-section {
     min-height: 0;
     display: block;
     padding: 76px 22px 48px !important;
-    background-position: center !important;
-    background-size: cover !important;
   }
   .contact-layout {
     width: 100%;
@@ -2209,34 +2193,18 @@ body[data-theme="dark"] .contact-section {
   border-color: #222 !important;
 }
 
-/* Keep the contact photo faint and fade it out before the form. */
+/* Keep contact area on a plain background with no background image. */
 .contact-section {
   isolation: isolate;
   background: #fbfaf7 !important;
   background-image: none !important;
 }
 .contact-section::before {
-  content: "" !important;
-  display: block !important;
-  position: absolute;
-  z-index: 0;
-  inset: 0;
-  background: url("img/contact-background.jpg") center 43% / cover no-repeat;
-  opacity: .22;
-  -webkit-mask-image: linear-gradient(to right, #000 0%, #000 28%, transparent 57%);
-  mask-image: linear-gradient(to right, #000 0%, #000 28%, transparent 57%);
-  pointer-events: none;
+  content: none !important;
+  display: none !important;
 }
 .contact-layout { position: relative; z-index: 1; }
 body[data-theme="dark"] .contact-section {
   background: #29231f !important;
   background-image: none !important;
-}
-body[data-theme="dark"] .contact-section::before { opacity: .18; }
-@media (max-width: 700px) {
-  .contact-section::before {
-    background-position: center 30%;
-    -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 24%, transparent 52%);
-    mask-image: linear-gradient(to bottom, #000 0%, #000 24%, transparent 52%);
-  }
 }
