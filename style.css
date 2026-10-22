@@ -2117,7 +2117,7 @@ body[data-theme="dark"] .portfolio-project-card { border-color: rgba(241, 235, 2
   margin-left: 0 !important;
   margin-right: 0;
   text-align: left;
-  transform: translateX(calc(0px - var(--strengths-inner-indent)));
+  transform: translateX(calc(0px - clamp(22px, 3vw, 40px)));
 }
 @media (max-width: 700px) {
   .strengths-section .section-heading-block {
