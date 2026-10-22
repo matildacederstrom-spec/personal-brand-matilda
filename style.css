@@ -1769,6 +1769,15 @@ body[data-theme="dark"] .site-header {
   background: #fbfaf7;
   color: #28211c;
 }
+.strengths-section::after {
+  content: "";
+  position: absolute;
+  right: clamp(24px, 5vw, 58px);
+  bottom: 0;
+  left: clamp(24px, 5vw, 58px);
+  border-top: 1px solid rgba(130, 119, 109, .28);
+  pointer-events: none;
+}
 .strengths-section .section-heading-block {
   max-width: 760px;
   margin: 0 auto 40px;
@@ -1949,13 +1958,40 @@ body[data-theme="dark"] .about-copy-brand-role { color: #c7bdb2; }
 .contact-section::after {
   content: "";
   position: absolute;
-  inset: 0;
+  inset: auto clamp(24px, 5vw, 58px) auto;
+  top: calc(-1 * clamp(25px, 2.5vw, 42px));
   border: 0;
   border-top: 1px solid rgba(130, 119, 109, .28);
   pointer-events: none;
 }
 .contact-section { padding-top: clamp(184px, 16vw, 220px); }
 @media (max-width: 700px) {
-  .contact-section::after { inset: 0; }
+  .contact-section::after { inset: auto 18px auto; top: -22px; }
   .contact-section { padding-top: 152px; }
+}
+
+#om-mig { position: relative; }
+#om-mig::after {
+  content: "";
+  position: absolute;
+  right: clamp(24px, 5vw, 58px);
+  bottom: 0;
+  left: clamp(24px, 5vw, 58px);
+  border-top: 1px solid rgba(130, 119, 109, .28);
+  pointer-events: none;
+}
+
+.education-under-skills { position: relative; }
+.education-under-skills::after {
+  content: "";
+  position: absolute;
+  right: clamp(24px, 5vw, 58px);
+  bottom: calc(-1 * clamp(80px, 6.2vw, 106px));
+  left: clamp(24px, 5vw, 58px);
+  border-top: 1px solid rgba(130, 119, 109, .28);
+  pointer-events: none;
+}
+.strengths-section { margin-bottom: clamp(44px, 5vw, 64px); }
+@media (max-width: 700px) {
+  .strengths-section { margin-bottom: 46px; }
 }
