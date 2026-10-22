@@ -1656,3 +1656,5 @@ body[data-theme="dark"] .language-option.is-active { color: #f1ebe3; }
 .contact-details,
 .caption-desc,
 .form-status-msg { font-size: 14px; }
+.skills-section .skills-duo-grid .category-desc,
+.skills-section .skills-duo-grid .skill-name { font-size: 14px; }
