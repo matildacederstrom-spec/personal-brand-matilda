@@ -2208,3 +2208,35 @@ body[data-theme="dark"] .contact-section {
   background: #222 !important;
   border-color: #222 !important;
 }
+
+/* Keep the contact photo faint and fade it out before the form. */
+.contact-section {
+  isolation: isolate;
+  background: #fbfaf7 !important;
+  background-image: none !important;
+}
+.contact-section::before {
+  content: "" !important;
+  display: block !important;
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  background: url("img/contact-background.jpg") center 43% / cover no-repeat;
+  opacity: .22;
+  -webkit-mask-image: linear-gradient(to right, #000 0%, #000 28%, transparent 57%);
+  mask-image: linear-gradient(to right, #000 0%, #000 28%, transparent 57%);
+  pointer-events: none;
+}
+.contact-layout { position: relative; z-index: 1; }
+body[data-theme="dark"] .contact-section {
+  background: #29231f !important;
+  background-image: none !important;
+}
+body[data-theme="dark"] .contact-section::before { opacity: .18; }
+@media (max-width: 700px) {
+  .contact-section::before {
+    background-position: center 30%;
+    -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 24%, transparent 52%);
+    mask-image: linear-gradient(to bottom, #000 0%, #000 24%, transparent 52%);
+  }
+}
