@@ -1700,7 +1700,6 @@ body[data-theme="dark"] .language-option.is-active { color: #f1ebe3; }
 .hero-section .hero-portfolio-title,
 .hero-section .hero-role-title { color: #fffaf4; }
 .hero-section .hero-portfolio-title .hero-monogram-divider { background: #fffaf4; }
-#header .nav-menu > a.nav-link { color: #fffaf4 !important; }
 body[data-theme="dark"] .hero-section {
   background-color: #201e1c !important;
 }
@@ -1721,3 +1720,6 @@ body[data-theme="dark"] .hero-section .hero-role-title { color: #fffaf4 !importa
   .hero-section .hero-role-title { color: #fffaf4; }
   .hero-section .hero-portfolio-title .hero-monogram-divider { background: #fffaf4; }
 }
+
+/* Align the header navigation to the left edge. */
+.nav-menu { justify-content: flex-start; width: 100%; }
