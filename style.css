@@ -1660,3 +1660,6 @@ body[data-theme="dark"] .language-option.is-active { color: #f1ebe3; }
 .skills-section .skills-duo-grid .skill-name { font-size: 14px; }
 .experience-block .timeline-description,
 .experience-block .timeline-bullets { font-size: 14px; }
+.experience-block .history-col-title { font-size: clamp(27px,2.9vw,35px); }
+.experience-block .timeline-role { font-size: clamp(27px,2.9vw,35px); }
+.experience-block .timeline-period { font-size: 14px; }
