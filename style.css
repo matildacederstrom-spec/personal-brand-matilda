@@ -2028,7 +2028,10 @@ body[data-theme="dark"] .about-copy-brand-role { color: #c7bdb2; }
 .portfolio-project-visual img {
   display: block;
   width: 100%;
-  height: auto;
+  height: auto !important;
+  max-height: none;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
   margin-top: clamp(20px, 3vw, 34px);
   border: 1px solid var(--line);
 }
