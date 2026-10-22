@@ -1695,7 +1695,7 @@ body[data-theme="dark"] .language-option.is-active { color: #f1ebe3; }
   background: linear-gradient(rgba(25, 22, 20, .38), rgba(25, 22, 20, .38)), url("img/hero-portrait.jpg") center 38% / cover no-repeat;
 }
 .hero-section .hero-grid { min-height: min(100vh, 790px); }
-.hero-section .hero-brand-frame { transform: translateY(160px); }
+.hero-section .hero-brand-frame { transform: translateY(180px); }
 .hero-section .hero-brand-frame { border-color: rgba(255, 250, 244, .8); }
 .hero-section .hero-portfolio-title,
 .hero-section .hero-role-title { color: #fffaf4; }
