@@ -1700,6 +1700,7 @@ body[data-theme="dark"] .language-option.is-active { color: #f1ebe3; }
 .hero-section .hero-portfolio-title,
 .hero-section .hero-role-title { color: #fffaf4; }
 .hero-section .hero-portfolio-title .hero-monogram-divider { background: #fffaf4; }
+#header .nav-menu > a.nav-link { color: #fffaf4 !important; }
 body[data-theme="dark"] .hero-section {
   background-color: #201e1c !important;
 }
